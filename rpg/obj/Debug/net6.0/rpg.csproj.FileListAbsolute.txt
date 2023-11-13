@@ -1,0 +1,14 @@
+F:\WorkSpace\ConsoleApp2\rpg\bin\Debug\net6.0\rpg.exe
+F:\WorkSpace\ConsoleApp2\rpg\bin\Debug\net6.0\rpg.deps.json
+F:\WorkSpace\ConsoleApp2\rpg\bin\Debug\net6.0\rpg.runtimeconfig.json
+F:\WorkSpace\ConsoleApp2\rpg\bin\Debug\net6.0\rpg.dll
+F:\WorkSpace\ConsoleApp2\rpg\bin\Debug\net6.0\rpg.pdb
+F:\WorkSpace\ConsoleApp2\rpg\obj\Debug\net6.0\rpg.GeneratedMSBuildEditorConfig.editorconfig
+F:\WorkSpace\ConsoleApp2\rpg\obj\Debug\net6.0\rpg.AssemblyInfoInputs.cache
+F:\WorkSpace\ConsoleApp2\rpg\obj\Debug\net6.0\rpg.AssemblyInfo.cs
+F:\WorkSpace\ConsoleApp2\rpg\obj\Debug\net6.0\rpg.csproj.CoreCompileInputs.cache
+F:\WorkSpace\ConsoleApp2\rpg\obj\Debug\net6.0\rpg.dll
+F:\WorkSpace\ConsoleApp2\rpg\obj\Debug\net6.0\refint\rpg.dll
+F:\WorkSpace\ConsoleApp2\rpg\obj\Debug\net6.0\rpg.pdb
+F:\WorkSpace\ConsoleApp2\rpg\obj\Debug\net6.0\rpg.genruntimeconfig.cache
+F:\WorkSpace\ConsoleApp2\rpg\obj\Debug\net6.0\ref\rpg.dll
