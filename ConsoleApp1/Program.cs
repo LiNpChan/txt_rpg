@@ -58,6 +58,16 @@ namespace ConsoleApp1
 
         static void DisplayMyInfo()
         {
+            int totalAtk = player.Atk;
+            int totalDef = player.Def;
+            foreach (var item in inventory)
+            {
+                if (item.IsEquipped)
+                {
+                    totalAtk += item.AtkBonus;
+                    totalDef += item.DefBonus;
+                }
+            }
             Console.Clear();
 
             Console.WriteLine("상태보기");
@@ -65,8 +75,8 @@ namespace ConsoleApp1
             Console.WriteLine();
             Console.WriteLine($"Lv.{player.Level}");
             Console.WriteLine($"{player.Name}({player.Job})");
-            Console.WriteLine($"공격력: {player.Atk}");
-            Console.WriteLine($"방어력: {player.Def}");
+            Console.WriteLine($"공격력: {player.Atk} (+ {totalAtk - player.Atk})");
+            Console.WriteLine($"방어력: {player.Def} (+ {totalDef - player.Def})");
             Console.WriteLine($"체력: {player.Hp}");
             Console.WriteLine($"Gold: {player.Gold} G");
             Console.WriteLine();
@@ -130,7 +140,7 @@ namespace ConsoleApp1
             {
                 return "공격력 +2 | 쉽게 볼 수 있는 낡은 검입니다.";
             }
-            else if (item.ItemName == "스파트라 갑옷")
+            else if (item.ItemName == "스파르타 갑옷")
             {
                 return "방어력 +10 | 스파르타 군인들이 입는 제식 갑옷입니다.";
             }
