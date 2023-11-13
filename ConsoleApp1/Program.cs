@@ -19,10 +19,12 @@ namespace ConsoleApp1
             player = new Character("Chad", "전사", 1, 10, 5, 100, 1500);
 
             // 아이템 정보 세팅
-            Item armor = new Item("무쇠갑옷", 0, 5);
-            Item sword = new Item("낡은 검", 2, 0);
+            Item armor1 = new Item("무쇠갑옷", 0, 5);
+            Item armor2 = new Item("스파르타 갑옷", 0, 10);
+            Item sword1 = new Item("낡은 검", 2, 0);
+            Item sword2 = new Item("스파르타 검", 6, 0);
 
-            inventory = new Item[] { armor, sword }; // 현재 인벤토리 안에 있는 아이템 입니다.
+            inventory = new Item[] { armor1, armor2, sword1, sword2 }; // 현재 인벤토리 안에 있는 아이템 입니다.
         }
 
         static void DisplayGameIntro()
@@ -96,18 +98,19 @@ namespace ConsoleApp1
 
                 Console.WriteLine($"{i + 1} {inventory[i].GetEquippedStatus()}{inventory[i].ItemName} | {GetItemDescription(inventory[i])}"); // 아이템과 아이템의 스텟, 설명을 프린트합니다.
             }
-            Console.WriteLine("3. 장착 관리");
+            Console.WriteLine();
+            Console.WriteLine("5. 장착 관리");
             Console.WriteLine();
             Console.WriteLine("0. 나가기");
 
 
-            int input = CheckValidInput(0, 3); // 만약 아이템이 추가되면 case 3: 부분을 수정해야함
+            int input = CheckValidInput(0, 6); // 만약 아이템이 추가될시 추가된 만큼 case부분 수정이 필요
             switch (input)
             {
                 case 0:
                     DisplayGameIntro();
                     break;
-                case 3:
+                case 5:
                     DisplayEquipManagement();
                     break;
 
@@ -126,6 +129,14 @@ namespace ConsoleApp1
             else if (item.ItemName == "낡은 검")
             {
                 return "공격력 +2 | 쉽게 볼 수 있는 낡은 검입니다.";
+            }
+            else if (item.ItemName == "스파트라 갑옷")
+            {
+                return "방어력 +10 | 스파르타 군인들이 입는 제식 갑옷입니다.";
+            }
+            else if (item.ItemName == "스파르타 검")
+            {
+                return "공격력 +6 | 스파르타 군인들이 사용하는 제식 검입니다.";
             }
 
             return string.Empty; // 만약 장비에 대한 설명이 없으면 빈 문자열을 나타냄
